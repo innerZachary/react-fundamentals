@@ -18,11 +18,12 @@
 <!--   💰 document.getElementById('root') -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append -->
 <body>
-  <div id="root"></div>
   <script>
-    const root = document.getElementById('root')
+    const root = document.createElement('div')
+    root.setAttribute('id', 'root')
+    document.body.append(root)
     const element = document.createElement('div')
-    element.textContent = 'cheese'
+    element.textContent = 'hello wolrd'
     root.append(element)
   </script>
 </body>
